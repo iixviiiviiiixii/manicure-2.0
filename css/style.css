@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    /* height: -webkit-fill-available; */
+    height: -webkit-fill-available;
 }
 
 *,
@@ -28,7 +28,7 @@ body {
     padding: 1em;
     width: 100%;
     height: 100vh;
-    /* height: -webkit-fill-available; */
+    height: -webkit-fill-available;
     color: var(--theme-color);
     position: relative;
 }
@@ -386,7 +386,7 @@ img {
             #ffc848,
             #ffe652);
     margin-bottom: 20px;
-    padding: 20px 30px;
+    padding: 30px;
 }
 
 .intro-text-wrapper {
@@ -1085,7 +1085,7 @@ img {
     /* Intro */
 
     .intro {
-        padding: 15px 20px;
+        padding: 20px;
     }
 
     .intro-text-wrapper {
@@ -1244,7 +1244,7 @@ img {
     /* Intro */
 
     .intro {
-        padding: 20px;
+        padding: 20px 10px;
         margin: 30px 0;
     }
 
