@@ -77,7 +77,7 @@ document.addEventListener('click', event => {
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <div class="modal-title">Адрес</div>
+                        <div class="modal-title">Адрес и телефон</div>
                         <div class="address-wrapper">
                             ${cardId.address}
                         </div>    

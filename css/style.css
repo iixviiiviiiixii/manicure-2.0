@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
 }
 
 *,
@@ -19,15 +19,6 @@ body {
     user-select: none;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    /* background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
-
-
-
-
-
-
-
-
     background-size: cover;
     background-position: center;
     display: flex;
@@ -36,7 +27,7 @@ body {
     flex-direction: column;
     padding: 1em;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     height: -webkit-fill-available;
     color: var(--theme-color);
     position: relative;
@@ -70,9 +61,7 @@ img {
     --modal-bg: #1a1c24;
     --card-bg: rgb(146 151 179 / 13%);
     --main-container-bg: rgba(16 18 27 / 40%);
-    /* background: #16222A;
-    background: -webkit-linear-gradient(to top, #3A6073, #16222A);
-    background: linear-gradient(to top, #3A6073, #16222A); */
+    --tel-color: #3bf083;
 
     background: #232526;
     /* fallback for old browsers */
@@ -101,17 +90,13 @@ img {
     --modal-bg: rgb(255 255 255 / 40%);
     --card-bg: rgba(255 255 255 / 70%);
     --main-container-bg: #dbd3e6;
+    --tel-color: #ff4b78;
 }
 
 .light-mode-bg {
     background: #D3CCE3;
     background: -webkit-linear-gradient(-45deg, #E9E4F0, #D3CCE3);
     background: linear-gradient(-45deg, #E9E4F0, #D3CCE3);
-
-    /* background: #C9D6FF; */
-    /* background: -webkit-linear-gradient(-45deg, #E2E2E2, #C9D6FF);
-    background: linear-gradient(-45deg, #E2E2E2, #C9D6FF); */
-
 }
 
 .app {
@@ -125,8 +110,8 @@ img {
     width: 100%;
     border-radius: 14px;
     border: 1px solid var(--border-color);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); */
     font-size: 15px;
     font-weight: 500;
 }
@@ -418,7 +403,7 @@ img {
 
 .intro-text {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.3;
     color: #ebecec;
     text-overflow: ellipsis;
@@ -528,10 +513,6 @@ img {
     border-radius: 50%;
 }
 
-.red {
-    background-color: #d6083b;
-}
-
 .card-body {
     display: flex;
     align-items: center;
@@ -558,7 +539,7 @@ img {
 .card-about {
     margin: 0 auto;
     width: 65%;
-    height: 100%;
+    height: 99%;
     font-weight: 500;
     font-size: 17px;
     line-height: 1.5;
@@ -634,7 +615,6 @@ img {
     position: fixed;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     height: 100vh;
     width: 100%;
     top: 0;
@@ -642,9 +622,7 @@ img {
     right: 0;
     bottom: 0;
     background: transparent;
-    transition: background .1s ease-in;
-    /* backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); */
+    transition: background .3s ease-in;
     overflow: auto;
 }
 
@@ -659,7 +637,7 @@ img {
     transform: translateY(100%);
     border: 4px solid var(--border-color);
     border-radius: 14px;
-    transition: .2s ease-out;
+    transition: .3s ease-out;
     will-change: scroll-position;
     overflow: auto;
 }
@@ -765,7 +743,7 @@ img {
 }
 
 .tel {
-    color: var(--theme-color);
+    color: var(--tel-color);
     text-decoration: underline;
 }
 
@@ -900,7 +878,7 @@ img {
     width: 100%;
     z-index: 100;
     transform: translateY(100%);
-    transition: all .2s ease-out;
+    transition: all .3s ease-out;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     -webkit-user-select: none;
@@ -1119,7 +1097,7 @@ img {
     }
 
     .intro-text {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     .intro-img {
@@ -1198,6 +1176,10 @@ img {
         font-size: 16px;
     }
 
+    .address-wrapper {
+        padding: 10px;
+    }
+
     .address {
         font-size: 16px;
     }
@@ -1272,11 +1254,11 @@ img {
 
     .h1 {
         margin-top: 0;
-        font-size: 16px;
+        font-size: 19px;
     }
 
     .intro-text {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .intro-img {
